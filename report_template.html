@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Defects Report 3</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <TMPL_LOOP>
+        <img class="defect" src="<tmpl_var name=img_path>">
+        <p>Location: </p>
+        <p>Room: </p>
+        <p>Status: Minor</p>
+        <p>Description: </p>
+        <p>Proposed date of completion/repairing by</p>
+    </TMPL_LOOP>
+
+<div class="pagebreak"></div>
+
+<p>this line should be on a new page</p>
+</body>
+</html>
