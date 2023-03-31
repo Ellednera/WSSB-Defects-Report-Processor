@@ -2,20 +2,52 @@
 <html>
 <head>
     <title>Defects Report 3</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="http://192.168.0.190/SB-KK3-defects-images/defects_report_sparse/styles.css" rel="stylesheet">
 </head>
 <body>
-    <TMPL_LOOP>
-        <img class="defect" src="<tmpl_var name=img_path>">
-        <p>Location: </p>
-        <p>Room: </p>
+    <TMPL_LOOP name=defects>
+        <p class="fake_header">KK3 Siburan | <tmpl_var name=page>/41</p>
+        <img class="defect" src="http://192.168.0.190/SB-KK3-defects-images/defects_images/all_pictures<tmpl_var name=img_path>">
+        <br>
+        <!--<p>Filename: <tmpl_var name="img_path"><p>-->
+        <p>Location: <tmpl_var name="location"></p>
+        <p>Room: <tmpl_var name="room"></p>
         <p>Status: Minor</p>
-        <p>Description: </p>
+        <p>Description: <tmpl_var name="description"></p>
         <p>Proposed date of completion/repairing by</p>
+        
+        <br><br>
+        
+        <table>
+            <tr>
+                <td>Prepared by</td>
+                <td>Checked by</td>
+                <td>Verified by</td>
+            </tr>
+            <tr>
+                <td><br><br></td>
+                <td><br><br></td>
+                <td><br><br></td>
+            </tr>
+            <tr>
+                <td>____________________</td>
+                <td>____________________</td>
+                <td>____________________</td>
+            </tr>
+            <tr>
+                <td>(Ellen)</td>
+                <td>(Peter)</td>
+                <td>(Mr. Loh)</td>
+            </tr>
+            <tr>
+                <td>Site Q.S.</td>
+                <td>Architectural Supervisor</td>
+                <td>Site Agent</td>
+            </tr>
+        </table>
+        
+        <div class="pagebreak"></div>
     </TMPL_LOOP>
 
-<div class="pagebreak"></div>
-
-<p>this line should be on a new page</p>
 </body>
 </html>
